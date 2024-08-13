@@ -1,0 +1,31 @@
+@media only screen and (max-width: 768px) {
+  .menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: #00000085;
+    z-index: 200;
+  }
+  .menu ul {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+  }
+  .show-menu{
+    left: 0;
+    display: block;
+  }
+  .show-menu ul{
+    right: 0;
+    transition: 200ms;
+  }
+}
